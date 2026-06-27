@@ -4,7 +4,7 @@ const projects = [
     title: "Livora Interiors",
     tag: "INTERIOR DESIGN",
     tagLabel: "Live Project",
-    liveUrl: "https://livora-website-tjzg-i40kxigq5-prateek-s-projects-649938cc.vercel.app/",
+    liveUrl: "https://livora-website-tjzg.vercel.app/",
     screenshot: "/livora-screenshot.png",
   },
   {
@@ -12,7 +12,7 @@ const projects = [
     title: "Sera Atelier",
     tag: "INTERIOR DESIGN",
     tagLabel: "Live Project",
-    liveUrl: "https://space-sanctuary-bwpf4afgk-prateek-s-projects-649938cc.vercel.app/",
+    liveUrl: "https://space-sanctuary-six.vercel.app/",
     screenshot: "/sera-atelier-screenshot.png",
   },
 ];
