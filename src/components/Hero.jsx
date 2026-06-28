@@ -11,7 +11,7 @@ export default function Hero() {
             Hey, I'm Prateek 👋
           </p>
 
-          <h1 className="font-heading text-5xl font-extrabold leading-[1.1] tracking-tight text-dark sm:text-6xl lg:text-7xl">
+          <h1 className="display-heading font-heading text-5xl font-extrabold leading-[1.1] tracking-tight text-dark sm:text-6xl lg:text-7xl">
             Web<br />Developer
           </h1>
 

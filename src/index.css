@@ -2,7 +2,7 @@
 
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-heading: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Barlow Condensed", ui-sans-serif, system-ui, sans-serif;
 
   --color-dark: #111111;
   --color-body: #6B6B6B;
@@ -51,4 +51,18 @@ body {
 
 .animate-fade-in-up {
   animation: fadeInUp 0.7s ease-out forwards;
+}
+
+/* ── Display heading: tighter tracking ────── */
+
+.display-heading {
+  letter-spacing: -0.03em;
+}
+
+/* ── Portfolio card surface polish ───────── */
+
+.card-shadow {
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.07), 0 1px 4px 0 rgba(0, 0, 0, 0.04);
+  border-radius: 18px;
+  overflow: hidden;
 }
