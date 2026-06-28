@@ -1,19 +1,50 @@
-const projects = [
+const categories = [
   {
-    id: "project-one",
-    title: "Livora Interiors",
-    tag: "INTERIOR DESIGN",
-    tagLabel: "Live Project",
-    liveUrl: "https://livora-website-tjzg.vercel.app/",
-    screenshot: "/livora-screenshot.png",
+    label: "Interior Design",
+    projects: [
+      {
+        id: "project-livora",
+        title: "Livora Interiors",
+        tag: "Interior Design",
+        tagLabel: "Live Project",
+        liveUrl: "https://livora-website-tjzg.vercel.app/",
+        screenshot: "/livora-screenshot.png",
+      },
+      {
+        id: "project-sera",
+        title: "Sera Atelier",
+        tag: "Interior Design",
+        tagLabel: "Live Project",
+        liveUrl: "https://space-sanctuary-six.vercel.app/",
+        screenshot: "/sera-atelier-screenshot.png",
+      },
+    ],
   },
   {
-    id: "project-two",
-    title: "Sera Atelier",
-    tag: "INTERIOR DESIGN",
-    tagLabel: "Live Project",
-    liveUrl: "https://space-sanctuary-six.vercel.app/",
-    screenshot: "/sera-atelier-screenshot.png",
+    label: "Real Estate",
+    projects: [
+      {
+        id: "project-meridian",
+        title: "Meridian Builds",
+        tag: "Real Estate",
+        tagLabel: "Live Project",
+        liveUrl: "https://meridian-modern-homes.vercel.app/",
+        screenshot: "/meridian-screenshot.png",
+      },
+    ],
+  },
+  {
+    label: "Healthcare",
+    projects: [
+      {
+        id: "project-skin-elements",
+        title: "The Skin Elements",
+        tag: "Healthcare",
+        tagLabel: "Live Project",
+        liveUrl: "https://prateekthota18-boop.github.io/skin-elements-vaishnavi/",
+        screenshot: "/skin-elements-screenshot.png",
+      },
+    ],
   },
 ];
 
@@ -84,9 +115,24 @@ export default function Portfolio() {
           Recent Work
         </h2>
 
-        <div className="mt-16 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
-          {projects.map((p) => (
-            <ProjectCard key={p.id} project={p} />
+        <div className="mt-16 space-y-20">
+          {categories.map((cat) => (
+            <div key={cat.label}>
+              {/* Category subheading */}
+              <div className="mb-10 flex items-center gap-4">
+                <h3 className="font-heading text-sm font-semibold uppercase tracking-[0.18em] text-muted">
+                  {cat.label}
+                </h3>
+                <div className="h-px flex-1 bg-border" />
+              </div>
+
+              {/* Projects grid */}
+              <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+                {cat.projects.map((p) => (
+                  <ProjectCard key={p.id} project={p} />
+                ))}
+              </div>
+            </div>
           ))}
         </div>
       </div>

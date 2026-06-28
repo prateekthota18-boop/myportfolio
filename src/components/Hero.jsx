@@ -16,8 +16,8 @@ export default function Hero() {
           </h1>
 
           <p className="mt-6 max-w-md text-lg leading-relaxed text-body">
-            I build clean, modern websites for businesses that actually want to
-            look good online.
+            Minimal by design, specific by intent — every site I build tells
+            that business's story, not a template's.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4 md:justify-start">
